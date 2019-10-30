@@ -10,12 +10,12 @@ const gameStory = [
     //Första objektet som innehåller en string 'message'
     //scenario BÖRJAN 0
     {
-        message: 'Du befinner dig i en skog. Det är en fin höstdag men du har kommit bort. Du vill hem. Lite längre fram ser du ett hus som ligger vid en sjö, utanför huset finns det en bil.',
+        message: 'Du befinner dig i en skog. Det är en fin höstdag men du har kommit bort. Det ryktas om att någon har sett en zombie, det skrämmer dig och du vill hem. Lite längre fram ser du ett hus som ligger vid en sjö, utanför huset finns det en bil.',
         options: [{
-            btnText: 'Vill du gå in i huset? 🏡',
+            btnText: 'Vill du gå in i huset?',
             nextRoom: 1
         }, {
-            btnText: 'Vill du gå till sjön? ⚓️',
+            btnText: 'Vill du gå till sjön?',
             nextRoom: 2
         }]
     },
@@ -24,10 +24,10 @@ const gameStory = [
     {
         message: 'Du befinner dig nu i huset, det är dammigt och känns övergivet. Men det doftar nybryggt kaffe. \n Vad vill du göra?',
         options: [{
-            btnText: 'Följa kaffedoften och se om du hittar någon som kan hjälpa dig? ☕️',
+            btnText: 'Följa kaffedoften och se om du hittar någon som kan hjälpa dig? ',
             nextRoom: 3
         }, {
-            btnText: 'Kommer på att du har gjort inbrott i huset får panik och springer ut igen. 😳',
+            btnText: 'Kommer på att du har gjort inbrott i huset får panik och springer ut igen.',
             nextRoom: 4
         }]
     },
@@ -39,7 +39,7 @@ const gameStory = [
             btnText: 'Du kollar in motorbåten såklart! 🚤',
             nextRoom: 5
         }, {
-            btnText: 'Vänder tillbaka till huset för att se om någon kan hjälpa dig hem. 🏡',
+            btnText: 'Vänder tillbaka till huset för att se om någon kan hjälpa dig hem.',
             nextRoom: 6
         }]
     },
@@ -61,10 +61,10 @@ const gameStory = [
         message: 'Du står nu utanför huset. Dörren stängs bakomdig med ett högt BANG! Vad gör du?',
         options: [{
             btnText: 'Springer!!!',
-            nextRoom: 9
+            nextRoom: 7
         }, {
             btnText: 'Står stilla och hoppas att det bara va du som hörde det!',
-            nextRoom: 9
+            nextRoom: 7
         }]
     },
 
@@ -73,10 +73,10 @@ const gameStory = [
         message: 'Du kan tyvärr inte starta båten, du får gå tillbaka på land. När du går i land snubblar du och hamnar i vattnet, Det blir ett högt ljud och du skriker efter hjälp, vad gör du?',
         options: [{
             btnText: 'Tar dig upp ur vattnet och springer mot huset',
-            nextRoom: 9
+            nextRoom: 7
         }, {
             btnText: 'Försöker komma på båten igen',
-            nextRoom: 9
+            nextRoom: 7
         }]
     },
 

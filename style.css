@@ -3,6 +3,9 @@
 }
 
 body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1rem;
     padding: 0;
     margin: 0;
     display: flex;
@@ -10,10 +13,17 @@ body{
     align-items: center;
     width: 100vw;
     height:100vh;
-    background: #333;
-}
+    background: rgb(17, 17, 17); 
+    /* background-image: url("/bilder/zombie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+} 
 
+.woods_video{
+    width: 100%;
+}
 .container {
+    position: fixed;
     width: 800px;
     max-width:80%;
     background: cornsilk;
@@ -30,13 +40,15 @@ body{
 }
 
 .btn {
-    background: rgb(10, 148, 102);
+    background: rgb(0, 70, 46);
     color: whitesmoke;
     border: none;
     padding: 0.5rem 1rem;
     outline: none;
+    font-size: 1rem;
+    
 }
 
 .btn:hover {
-    background: orange;
+    background: #333;
 }
