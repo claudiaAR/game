@@ -1,0 +1,42 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height:100vh;
+    background: #333;
+}
+
+.container {
+    width: 800px;
+    max-width:80%;
+    background: cornsilk;
+    padding: 2rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 1rem, 1.6rem;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:1rem;
+    margin-top: 1.8rem;
+}
+
+.btn {
+    background: rgb(10, 148, 102);
+    color: whitesmoke;
+    border: none;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+.btn:hover {
+    background: orange;
+}
