@@ -22,7 +22,7 @@ const gameStory = [
 
     //scenario HUS
     {
-        message: 'Du befinner dig nu i huset, det är dammigt och känns övergivet. Men det doftar nybryggt kaffe. Vad vill du göra',
+        message: 'Du befinner dig nu i huset, det är dammigt och känns övergivet. Men det doftar nybryggt kaffe. \n Vad vill du göra?',
         options: [{
             btnText: 'Följa kaffedoften och se om du hittar någon som kan hjälpa dig? ☕️',
             nextRoom: 3
@@ -67,6 +67,20 @@ const gameStory = [
             nextRoom: 9
         }]
     },
+
+    //scenario SJÖ => MOTORBÅT
+    {
+        message: 'Du kan tyvärr inte starta båten, du får gå tillbaka på land. När du går i land snubblar du och hamnar i vattnet, Det blir ett högt ljud och du skriker efter hjälp, vad gör du?',
+        options: [{
+            btnText: 'Tar dig upp ur vattnet och springer mot huset',
+            nextRoom: 9
+        }, {
+            btnText: 'Försöker komma på båten igen',
+            nextRoom: 9
+        }]
+    },
+
+
     //scenario END SCEN
     {
         message: 'Du hör ett obehagligt ljud backom dig, ljudet kommer närmare och närmare en stark illaluktande doft omringar dig och det blir svart. Game over, du har blivit uppäten av en zombie 🧟‍🧟‍'
