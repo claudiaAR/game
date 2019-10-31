@@ -59,10 +59,13 @@ body{
 }
 
 .answer{
-    padding: 0.5rem 2rem 0.5rem 0.3rem;
+    padding: 0.5rem 4rem 0.5rem 0.3rem;
     outline: none;
     border:solid  rgb(0, 70, 46);
     color: rgb(0, 70, 46);
+}
+.answer_error{
+    border:solid  rgb(230, 73, 0);
 }
 
 p{
