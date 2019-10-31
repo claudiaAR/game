@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>text adventure</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="story.js"></script>
     <script defer src="game.js"></script>
 </head>
+
 <body>
-        <video autoplay muted loop class="woods_video">
-                <source src="bilder/woods.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-              </video>
+    <!-- <video autoplay muted loop class="woods_video">
+        <source src="bilder/woods.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video> -->
     <div class="container">
-        <div id="text"> Text</div>
-        <div class="btn-grid">
-            <button id="button1" class="btn">Option 1</button>
-            <button id="button2" class="btn">Option 2</button>
-            
-        <!-- <input type="text" placeholder="svar"> -->
-        </div>
+        <div id="text"> Text</div>          
+        <p>Vad vill du göra? </p>
+        <input class="answer" id="typeAnswer" type="text" placeholder="Gör ett val "> </div>
+        <div class="answer_style" id="result"></div>
     </div>
+    
 
 </body>
+
 </html>
