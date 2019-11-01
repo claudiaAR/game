@@ -51,6 +51,10 @@ function textMatch(inputText, arrayOfTexts){
     return false
 }
 
+
+
+
+
 function setup() {
     bindKeyEvent()
     startGame()
