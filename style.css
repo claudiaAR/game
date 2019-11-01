@@ -1,8 +1,10 @@
-*, *::before, *::after {
-    box-sizing:border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'roboto';
     font-size: 1rem;
     line-height: 1.5rem;
@@ -12,23 +14,24 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height:100vh;
-    background: rgb(17, 17, 17); 
+    height: 100vh;
+    background: rgb(17, 17, 17);
     overflow: hidden;
-} 
+}
 
-.woods_video{
+.woods_video {
     /* position: fixed;
     right: 0;
   bottom: 0; */
-  min-width: 100%;
-  min-height: 100%;
-    
+    min-width: 100%;
+    min-height: 100%;
+
 }
+
 .container {
     position: fixed;
     width: 800px;
-    max-width:40%;
+    max-width: 40%;
     color: #F5F4E9;
     background: rgb(17, 17, 17);
     padding: 3rem;
@@ -38,33 +41,39 @@ body{
     flex-direction: column;
 }
 
-.answer_style{
+.answer_style {
     background: rgb(17, 17, 17);
     color: whitesmoke;
-    
 }
 
-.answer{
+.answer {
     padding: 0.5rem 6rem 0.5rem 0.3rem;
     outline: none;
-    border:solid #6a63dd;
+    border: solid #6a63dd;
     background: rgb(66, 34, 212);
     color: #F5F4E9;
     font-size: 1rem;
 }
-.answer :-ms-input-placeholder{
-    color: #F5F4E9;
-}
-.answer_error{
-    border:solid  rgb(230, 73, 0);
+
+.answer_error {
+    border: solid rgb(230, 73, 0);
 }
 
 @media screen and (max-width: 800px) {
     .container {
-        max-width:70%;
+        max-width: 70%;
         display: flex;
         flex-direction: column;
     }
 
-   
-  }
+    body {
+        background: url("bilder/zombie_hands.jpg") no-repeat;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .woods_video {
+        display: none;
+    }
+}
