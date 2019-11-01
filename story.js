@@ -4,7 +4,7 @@ const gameStory = [
     //Första objektet som innehåller en string 'message'
     //scenario BÖRJAN 0
     {
-        message: 'Du befinner dig i en skog. Det är en fin höstdag men du har kommit bort. Det ryktas om att någon har sett en zombie, det skrämmer dig och du vill hem. Lite längre fram ser du ett hus som ligger vid en sjö, utanför huset finns det en bil. \n Väljer du att gå till huset eller till sjön?\n \nHuset \nSjön',
+        message: 'Du befinner dig i en skog. Det är en fin höstdag men du har kommit bort. Det ryktas om att någon har sett en zombie, det skrämmer dig, det enda du vet är att zombies drars till höga ljud. Lite längre fram ser du ett hus som ligger vid en sjö, utanför huset finns det en bil. \n Väljer du att gå till huset eller till sjön?\n\n Val: Huset eller Sjön',
         options: [{
             text: ['Huset', 'till huset', 'house'],
             nextRoom: 1
@@ -16,72 +16,72 @@ const gameStory = [
 
     //scenario HUS [1]
     {
-        message: 'Du befinner dig nu i huset, det är dammigt och känns övergivet. Men det doftar nybryggt kaffe. \n Vad vill du göra?',
+        message: 'Du befinner dig nu i huset, det är dammigt och känns övergivet. Men det doftar nybryggt kaffe. Vad vill du göra? \n\nFölja kaffedoften och se om du hittar någon som kan hjälpa dig?\n\n Kommer på att du har gjort inbrott i huset får panik och springer ut igen.\n\n Val: Kaffedoft eller Inbrott',
         options: [{
-            text: 'Följa kaffedoften och se om du hittar någon som kan hjälpa dig? ',
+            text: ['Följa kaffedoften', 'kaffedoften', 'kaffedoft', 'kaffe', 'cafe', 'café'],
             nextRoom: 3
         }, {
-            text: 'Kommer på att du har gjort inbrott i huset får panik och springer ut igen.',
+            text: ['inbrott', 'inbrot', 'panik', 'springa', 'springer ut', 'går ut', 'går', 'jag får panik', 'jag springer', 'jag springer ut', 'jag går', 'jag går ut'],
             nextRoom: 4
         }]
     },
 
     //scenario SJÖ [2]
     {
-        message: 'Du står nu vid sjön, några meter bort finns en motorbåt. Vad vill du göra?',
+        message: 'Du står nu vid sjön, några meter bort finns en motorbåt. Vad vill du göra? \n\n Val:Gå till motorbåten eller går tillbaka till huset',
         options: [{
-            text: 'Du kollar in motorbåten såklart!',
+            text: ['gå till motorbåten', 'motorbåten', 'båten', 'båt', 'kolla båten', 'jag går till motorbåten'],
             nextRoom: 5
         }, {
-            text: 'Vänder tillbaka till huset för att se om någon kan hjälpa dig hem.',
+            text: ['går tillbaka till huset', 'tillbaka till huset', 'huset', 'tillbaka', 'jag går tillbaka till huset'],
             nextRoom: 6
         }]
     },
 
     //scenario HUS => KAFFEDOFT [3]
     {
-        message: 'Doften ledder dig till köket, kaffebryggaren står på och du ser att det ligger någon bakom köksbordet. Vad gör du?',
+        message: 'Doften ledder dig till köket, kaffebryggaren står på och du ser att det ligger någon bakom köksbordet. Vad gör du?\n\n Val: Du ser om personen mår bra eller Du ropar för att få personens uppmärksamhet',
         options: [{
-            text: 'Du kollar hur det är med personen som ligger ner',
+            text: ['Du ser om personen mår bra', 'mår bra', 'ser till personen', 'undersöker perosnens välmåeende', 'mår', 'bra', 'jag ser om personen mår bra'],
             nextRoom: 7
         }, {
-            text: 'Du ropar: -Hey! Är allt ok?',
+            text: ['Du ropar för att få personens uppmärksamhet', 'ropar', 'frågar', 'uppmärsammhet', 'få personens uppmärksamhet', 'Du ropar', 'jag ropar'],
             nextRoom: 7
         }]
     },
 
     //scenario HUS => INNBROTT [4]
     {
-        message: 'Du står nu utanför huset. Dörren stängs bakomdig med ett högt BANG! Vad gör du?',
+        message: 'Du står nu utanför huset. Dörren stängs bakomdig med ett högt BANG! Vad gör du?\n\n Val: Springer!!! eller Står helt stilla och hoppas ingen hörde!',
         options: [{
-            text: 'Springer!!!',
+            text: ['Springer!!!', 'Springer!!', 'springer!', 'springer'],
             nextRoom: 7
         }, {
-            text: 'Står stilla och hoppas att det bara va du som hörde det!',
+            text: ['Står helt stilla och hoppas ingen hörde!', 'står still', 'står helt stilla', 'hoppas ingen hörde', 'stilla', 'står kvar','står helt still'],
             nextRoom: 7
         }]
     },
 
     //scenario SJÖ => MOTORBÅT [5]
     {
-        message: 'Du kan tyvärr inte starta båten, du får gå tillbaka på land. När du går i land snubblar du och hamnar i vattnet, Det blir ett högt ljud och du skriker efter hjälp, vad gör du?',
+        message: 'Du kan tyvärr inte starta båten, gå i land. Du snubblar och hamnar i vattnet, det blir ett högt ljud, vad gör du?\n\n Val: Tar dig upp ur vattnet och springer mot huset eller försöker komma på båten igen',
         options: [{
-            text: 'Tar dig upp ur vattnet och springer mot huset',
+            text: ['Tar dig upp ur vattnet och springer mot huset', 'tar dig upp', 'tar dig upp ur vattnet', 'springer', 'springer mot huset', 'går tillbaka till huset', 'huset'],
             nextRoom: 7
         }, {
-            text: 'Försöker komma på båten igen',
+            text: ['Försöker komma på båten igen', 'går på båten', 'båten igen', 'går upp', 'testa båten', 'upp'],
             nextRoom: 7
         }]
     },
 
     //scenario SJÖ => VÄND TILL HUSET [6]
     {
-        message: 'Du vänder och börjar gå mot huset och kommer på att det fanns en bil utanför. Du går till bilen, den är öppen och nycklarna ligger i vad gör du?',
+        message: 'Du vänder och börjar gå mot huset och kommer på att det fanns en bil utanför. Du går till bilen, den är öppen och nycklarna ligger i vad gör du? \n\n Val: Sätter dig i bilen och kör iväg på stigen eller Du går mot huset för att se om du får låna bilden',
         options: [{
-            text: 'Sätter dig i bilen och kör iväg på stigen.',
+            text: ['Sätter dig i bilen och kör iväg på stigen', 'sätter dig i bilen','tar bilen', 'tar bilen och kör iväg', 'sätter dig i bilen och kör iväg', 'kör iväg i bilen', 'bilen', 'kör'],
             nextRoom: 8
         }, {
-            text: 'Du går mot huset för att se om du får låna bilden.',
+            text: ['Du går mot huset för att se om du får låna bilden', 'lånar bilen', 'går mot huset', 'huset', 'går till huset', 'lånar', 'tillbaka'],
             nextRoom: 7
         }]
     },
@@ -89,26 +89,35 @@ const gameStory = [
 
     //scenario LOOSER END SCEN [7]
     {
-        message: 'Du hör ett obehagligt ljud backom dig, ljudet kommer närmare och närmare en stark illaluktande doft omringar dig och det blir svart. Game over, du har blivit uppäten av en zombie 🧟‍🧟‍',
+        message: 'Du hör ett obehagligt ljud bakom dig, ljudet kommer närmare och närmare en stark illaluktande doft omringar dig och det blir svart. Game over, du har blivit uppäten av en zombie 🧟‍🧟‍ \n\nVill du spela igen?',
         options: [{
-            text: 'Vill du spela igen?',
+            text: ['ja', 'yes', 'si', 'jaa', 'ok', 'okey', 'yeah'],
             nextRoom: 0
         }, {
-            text: 'Nej tack!',
-            nextRoom: 0
+            text: ['nej', 'Nej tack!', 'no', 'hell no', 'well no', 'nä', 'neej', 'nep'],
+            nextRoom: 9
         }]
     },
 
     //scenario WINNER END SCEN [8]
     {
-        message: 'Påvägen ser du massa zombies och blir rädd och överraskad men mest lättad. \n Grattis du har lyckats ta dig ut levande från zombie skogen 🏆',
+        message: 'Påvägen ser du massa zombies och blir rädd och överraskad men mest lättad. \n Grattis du har lyckats ta dig ut levande från zombie skogen 🏆\n\nBra jobbat, vill du spela igen?',
         options: [{
-            text: 'Bra jobbat, vill du spela igen?',
+            text: ['ja', 'yes', 'si', 'jaa', 'ok', 'okey', 'yeah'],
             nextRoom: 0
         }, {
-            text: 'Nej tack!',
+            text: ['nej', 'Nej tack!', 'no', 'hell no', 'well no', 'nä', 'neej', 'nep'],
+            nextRoom: 9
+        }]
+    },
+     //scenario WINNER END SCEN [9]
+    {
+        message: 'Ciao 👋🏾🖖🏾\n På återseende',
+        options:[{
+            text: ['spela', 'tack', 'igen','lets go'],
             nextRoom: 0
         }]
     }
+
 
 ]

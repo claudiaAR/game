@@ -32,15 +32,7 @@ function handleEnter(event) {
                 isAnswerAccepted = true
                 inputElement.placeholder = 'Gör ett val '
             }
-
-
-            /* 
-            if (answer === option.text) {
-                currentRoomIndex = option.nextRoom
-                showRoom()
-                isAnswerAccepted = true
-            }
-            */
+            
         }
 
         if (!isAnswerAccepted) {
