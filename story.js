@@ -1,12 +1,12 @@
 
-//En array med flera objek enter 13
+//En array med flera objek
 const gameStory = [
     //Första objektet som innehåller en string 'message'
     //scenario BÖRJAN 0
     {
         message: 'Du befinner dig i en skog. Det är en fin höstdag men du har kommit bort. Det ryktas om att någon har sett en zombie, det skrämmer dig, det enda du vet är att zombies drars till höga ljud. Lite längre fram ser du ett hus som ligger vid en sjö, utanför huset finns det en bil. \n Väljer du att gå till huset eller till sjön?\n\n Val: Huset eller Sjön',
         options: [{
-            text: ['Huset', 'till huset', 'house'],
+            text: ['Huset', 'till huset', 'house', 'hus', 'casa'],
             nextRoom: 1
         }, {
             text: ['Sjön', 'lake', 'vattnet'],
