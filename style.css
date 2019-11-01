@@ -69,7 +69,6 @@ body {
     body {
         background: url("bilder/zombie_hands.jpg") no-repeat;
         width: 100vw;
-        height: 100vh;
         object-fit: cover;
     }
 

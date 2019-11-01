@@ -30,9 +30,8 @@ function handleEnter(event) {
                 currentRoomIndex = option.nextRoom
                 showRoom()
                 isAnswerAccepted = true
-                inputElement.placeholder = 'Gör ett val '
-            }
-            
+                inputElement.placeholder = 'skriv... '
+            } 
         }
 
         if (!isAnswerAccepted) {
@@ -41,6 +40,7 @@ function handleEnter(event) {
         }
     }
 }
+
 function textMatch(inputText, arrayOfTexts){
 
     for(let text of arrayOfTexts) {
@@ -50,9 +50,6 @@ function textMatch(inputText, arrayOfTexts){
     }
     return false
 }
-
-
-
 
 
 function setup() {

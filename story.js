@@ -7,7 +7,7 @@ const gameStory = [
         message: 'Vill du spela zombie spelet?',
         image: 'bilder/zombie_hands.jpg',
         options: [{
-            text: ['starta', 'kör', 'spela', 'ja', 'lets go'],
+            text: ['starta', 'kör', 'spela', 'ja', 'lets go', 'japp'],
             nextRoom: 1
         }, {
             text: ['nej', 'no', 'nä', 'nope', 'oh no'],
