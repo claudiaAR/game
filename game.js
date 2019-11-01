@@ -1,3 +1,4 @@
+
 const textElement = document.getElementById('text')
 const inputElement = document.getElementById('typeAnswer')
 
@@ -16,6 +17,11 @@ function bindKeyEvent() {
     inputElement.addEventListener("keypress", handleEnter)
 }
 
+
+/**
+ * 
+ * @param {KeyboardEvent} event 
+ */
 function handleEnter(event) {
     inputElement.classList.remove('answer_error')
     if (event.key === "Enter") {
@@ -41,6 +47,14 @@ function handleEnter(event) {
     }
 }
 
+/**
+ * The function textMatch checks if the input field text is matching 
+ * the text array under options.
+ * 
+ * @param {String} inputText fdgdfg
+ * @param {Array<String>} arrayOfTexts asdasdasd
+ * @returns {Boolean} asdasdasdasd
+ */
 function textMatch(inputText, arrayOfTexts){
 
     for(let text of arrayOfTexts) {
@@ -51,7 +65,9 @@ function textMatch(inputText, arrayOfTexts){
     return false
 }
 
-
+/**
+ * Setups to start the game
+ */
 function setup() {
     bindKeyEvent()
     startGame()

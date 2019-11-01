@@ -1,3 +1,6 @@
+/**
+ * this is the gameStory array
+ */
 
 //En array med flera objek
 const gameStory = [
@@ -7,7 +10,7 @@ const gameStory = [
         message: 'Vill du spela zombie spelet?',
         image: 'bilder/zombie_hands.jpg',
         options: [{
-            text: ['starta', 'kör', 'spela', 'ja', 'lets go', 'japp'],
+            text: ['starta', 'kör', 'spela', 'ja', 'lets go', 'japp', 'yes', 'yeah'],
             nextRoom: 1
         }, {
             text: ['nej', 'no', 'nä', 'nope', 'oh no'],
@@ -118,7 +121,7 @@ const gameStory = [
             text: ['ja', 'yes', 'si', 'jaa', 'ok', 'okey', 'yeah'],
             nextRoom: 0
         }, {
-            text: ['nej', 'Nej tack!', 'no', 'hell no', 'well no', 'nä', 'neej', 'nep'],
+            text: ['nej', 'Nej tack!', 'no', 'hell no', 'well no', 'nä', 'neej', 'nep', 'nope'],
             nextRoom: 10
         }]
     },
