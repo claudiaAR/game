@@ -1,5 +1,7 @@
 /**
- * this is the gameStory array
+ * this is the gameStory array it contains a message for every room 
+ * and a text array with possible answeroptions the nextRoom objekt 
+ * sends you to the arraynumber that will represent the next room.
  */
 
 //En array med flera objek
@@ -124,9 +126,9 @@ const gameStory = [
             nextRoom: 10
         }]
     },
-     //scenario WINNER END SCEN [10]
+     //scenario DONE WITH GAME END SCEN [10]
     {
-        message: 'Ciao 👋🏾🖖🏾\n På återseende',
+        message: 'Ciao 👋🖖\n Hasta la vista, baby',
         options:[{
             text: ['spela', 'tack', 'igen','lets go'],
             nextRoom: 0
