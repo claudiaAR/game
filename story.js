@@ -103,7 +103,7 @@ const gameStory = [
 
     //scenario LOOSER END SCEN [8]
     {
-        message: 'GAME OVER \nDu hör ett obehagligt ljud bakom dig, ljudet kommer närmare och närmare en stark illaluktande doft omringar dig och det blir svart. Game over, du har blivit uppäten av en zombie 🧟‍🧟‍ \n\nVill du spela igen?',
+        message: 'GAME OVER \n\nDu hör ett obehagligt ljud bakom dig, ljudet kommer närmare och närmare en stark illaluktande doft omringar dig och det blir svart. Game over, du har blivit uppäten av en zombie 🧟‍🧟‍ \n\nVill du spela igen?',
         options: [{
             text: ['ja', 'yes', 'si', 'jaa', 'ok', 'okey', 'yeah'],
             nextRoom: 0
@@ -115,7 +115,7 @@ const gameStory = [
 
     //scenario WINNER END SCEN [9]
     {
-        message: 'THE WINNER TAKES IT ALL 😎Påvägen ser du massa zombies och blir rädd och överraskad men mest lättad. \n Grattis du har lyckats ta dig ut levande från zombie skogen 🏆\n\nBra jobbat, vill du spela igen?',
+        message: 'THE WINNER TAKES IT ALL 😎\n\nPåvägen ser du massa zombies och blir rädd och överraskad men mest lättad. \n Grattis du har lyckats ta dig ut levande från zombie skogen 🏆\n\nBra jobbat, vill du spela igen?',
         options: [{
             text: ['ja', 'yes', 'si', 'jaa', 'ok', 'okey', 'yeah'],
             nextRoom: 0
