@@ -1,18 +1,21 @@
 
 const textElement = document.getElementById('text')
 const inputElement = document.getElementById('typeAnswer')
-
 let currentRoomIndex = 0
 
-function showRoom() {
+
+/**
+ * game funktionen läser den globala variabeln currentRoomIndex och skriver 
+ * ut värdet message i det objektet.
+ */
+function game() {
     const room = gameStory[currentRoomIndex]
     textElement.innerText = room.message
 }
 
-function startGame() {
-    showRoom()
-}
-
+/**
+ * Lyssnar på tangentbordets alla knappar
+ */
 function bindKeyEvent() {
     inputElement.addEventListener("keypress", handleEnter)
 }
@@ -21,6 +24,19 @@ function bindKeyEvent() {
 /**
  * 
  * @param {KeyboardEvent} event 
+ * funktionen tar in ett event som först tar bort en css-klass 
+ * den första if-satsen kollar om det inkommande eventet är av värdet enter
+ * loopar igenom de två värdena i options arrayen och jämför dess textvärden med textvärden från inputfältet
+ * 
+ * om inputfältets text matchar så uppdtteras currentRoomIndex variablen med värdet i option.nextRoom,
+ * kör geme funtionen och uppdaterar placeholder attributet på inputfältet
+ * 
+ * om keypress-eventet inte matchar nångon text i någon av options-arrayerna
+ * så uppdateras placeholder attributet på inputfältet med ett felmeddelande
+ * oc en css-klass sätts på input-elementet
+ * 
+ * 
+ * Om texten från inputfältet matchar en text i textarrayen så uppdateras currentRoomIndex och spelaren skickas framåt annars visas ett felmeddelnade
  */
 function handleEnter(event) {
     inputElement.classList.remove('answer_error')
@@ -34,7 +50,7 @@ function handleEnter(event) {
 
             if(textMatch(answer, option.text)){
                 currentRoomIndex = option.nextRoom
-                showRoom()
+                game()
                 isAnswerAccepted = true
                 inputElement.placeholder = 'skriv... '
             } 
@@ -51,9 +67,9 @@ function handleEnter(event) {
  * The function textMatch checks if the input field text is matching 
  * the text array under options.
  * 
- * @param {String} inputText fdgdfg
- * @param {Array<String>} arrayOfTexts asdasdasd
- * @returns {Boolean} asdasdasdasd
+ * @param {String} inputText Texten som användaren skriver in i inputfältet
+ * @param {Array<String>} arrayOfTexts Alternativen som ska matchas med texten från inputfältet
+ * @returns {Boolean} matchar inputText med en av arrayOfText så returnera true annars returnera false
  */
 function textMatch(inputText, arrayOfTexts){
 
@@ -70,7 +86,7 @@ function textMatch(inputText, arrayOfTexts){
  */
 function setup() {
     bindKeyEvent()
-    startGame()
+    game()
 }
 
 

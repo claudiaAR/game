@@ -19,19 +19,19 @@ const gameStory = [
     },
     //scenario BÖRJAN [1]
     {
-        message: 'Du befinner dig i en skog. Det är en fin höstdag men du har kommit bort. Det ryktas om att någon har sett en zombie, det skrämmer dig, det enda du vet är att zombies drars till höga ljud. Lite längre fram ser du ett hus som ligger vid en sjö, utanför huset finns det en bil. \n Väljer du att gå till huset eller till sjön?\n\n Val: Huset eller Sjön',
+        message: 'Du befinner dig i en skog. Det är en fin höstdag men du har kommit bort. Det ryktas om att någon har sett en zombie, det skrämmer dig, det enda du vet är att zombies drars till höga ljud. Lite längre fram ser du ett hus som ligger vid en sjö, utanför huset finns det en bil. \n Väljer du att gå till huset eller till sjön?\n\n Val: \n Går till huset \n Går till Sjön',
         options: [{
-            text: ['Huset', 'till huset', 'house', 'hus', 'casa'],
+            text: ['Huset', 'till huset', 'house', 'hus', 'casa', 'gå in i huset', 'gå till huset','går till huset'],
             nextRoom: 2
         }, {
-            text: ['Sjön', 'lake', 'vattnet', 'sjö', 'lago'],
+            text: ['Sjön', 'lake', 'vattnet', 'sjö', 'lago', 'gå till sjön', 'jag väljer sjön'],
             nextRoom: 3
         }]
     },
 
     //scenario HUS [2]
     {
-        message: 'Du befinner dig nu i huset, det är dammigt och känns övergivet. Men det doftar nybryggt kaffe. Vad vill du göra? \n\nFölja kaffedoften och se om du hittar någon som kan hjälpa dig?\n\n Kommer på att du har gjort inbrott i huset får panik och springer ut igen.\n\n Val: Kaffedoft eller Inbrott',
+        message: 'Du befinner dig nu i huset, det är dammigt och känns övergivet. Men det doftar nybryggt kaffe. Vad vill du göra? \n\nFölja kaffedoften och se om du hittar någon som kan hjälpa dig?\n\n Kommer på att du har gjort inbrott i huset får panik och springer ut igen.\n\n Val: \nKaffe \nInbrott',
         options: [{
             text: ['Följa kaffedoften', 'kaffedoften', 'kaffedoft', 'kaffe', 'cafe', 'café'],
             nextRoom: 4
@@ -43,7 +43,7 @@ const gameStory = [
 
     //scenario SJÖ [3]
     {
-        message: 'Du står nu vid sjön, några meter bort finns en motorbåt. Vad vill du göra? \n\n Val:Gå till motorbåten eller går tillbaka till huset',
+        message: 'Du står nu vid sjön, några meter bort finns en motorbåt. Vad vill du göra? \n\n Val: \nGå till motorbåten \n går tillbaka till huset',
         options: [{
             text: ['gå till motorbåten', 'motorbåten', 'båten', 'båt', 'kolla båten', 'jag går till motorbåten'],
             nextRoom: 6
@@ -55,12 +55,12 @@ const gameStory = [
 
     //scenario HUS => KAFFEDOFT [4]
     {
-        message: 'Doften ledder dig till köket, kaffebryggaren står på och du ser att det ligger någon bakom köksbordet. Vad gör du?\n\n Val: Du ser om personen mår bra eller Du ropar för att få personens uppmärksamhet',
+        message: 'Doften ledder dig till köket, kaffebryggaren står på och du ser att det ligger någon bakom köksbordet. Vad gör du?\n\n Val:\n Du ser om personen mår bra \n Du skriker av räddsla!!',
         options: [{
             text: ['Du ser om personen mår bra', 'mår bra', 'ser till personen', 'undersöker perosnens välmåeende', 'mår', 'bra', 'jag ser om personen mår bra'],
             nextRoom: 8
         }, {
-            text: ['Du ropar för att få personens uppmärksamhet', 'ropar', 'frågar', 'uppmärsammhet', 'få personens uppmärksamhet', 'Du ropar', 'jag ropar'],
+            text: ['Du skriker av räddsla!!', 'Du skriker av räddsla!', 'Du skriker av räddsla', 'skriker', 'frågar', 'uppmärsammhet', 'få personens uppmärksamhet', 'Du ropar', 'jag ropar'],
             nextRoom: 8
         }]
     },
@@ -93,7 +93,7 @@ const gameStory = [
     {
         message: 'Du vänder och börjar gå mot huset och kommer på att det fanns en bil utanför. Du går till bilen, den är öppen och nycklarna ligger i vad gör du? \n\n Val: Sätter dig i bilen och kör iväg på stigen eller Du går mot huset för att se om du får låna bilen',
         options: [{
-            text: ['Sätter dig i bilen och kör iväg på stigen', 'sätter dig i bilen','tar bilen', 'tar bilen och kör iväg', 'sätter dig i bilen och kör iväg', 'kör iväg i bilen', 'bilen', 'kör'],
+            text: ['Sätter dig i bilen och kör iväg på stigen', 'sätter dig i bilen','tar bilen', 'tar bilen och kör iväg', 'sätter dig i bilen och kör iväg', 'kör iväg i bilen', 'bilen', 'kör', 'ta bilen', 'drive'],
             nextRoom: 9
         }, {
             text: ['Du går mot huset för att se om du får låna bilden', 'lånar bilen', 'går mot huset', 'huset', 'går till huset', 'lånar', 'tillbaka'],
