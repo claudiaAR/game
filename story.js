@@ -8,7 +8,6 @@ const gameStory = [
      //scenario STARTA SPELET 0
     {
         message: 'Vill du spela zombie spelet?',
-        image: 'bilder/zombie_hands.jpg',
         options: [{
             text: ['starta', 'kör', 'spela', 'ja', 'lets go', 'japp', 'yes', 'yeah'],
             nextRoom: 1
@@ -31,19 +30,19 @@ const gameStory = [
 
     //scenario HUS [2]
     {
-        message: 'Du befinner dig nu i huset, det är dammigt och känns övergivet. Men det doftar nybryggt kaffe. Vad vill du göra? \n\nFölja kaffedoften och se om du hittar någon som kan hjälpa dig?\n\n Kommer på att du har gjort inbrott i huset får panik och springer ut igen.\n\n Val: \nKaffe \nInbrott',
+        message: 'Du befinner dig nu i huset, det är dammigt och känns övergivet. Men det doftar nybryggt kaffe. Vad vill du göra? \n\nFölja kaffedoften och se om du hittar någon som kan hjälpa dig?\n\n Kommer på att du har gjort inbrott i huset får panik och springer ut igen.\n\n Val: \nKaffe \nSpringer ut',
         options: [{
             text: ['Följa kaffedoften', 'kaffedoften', 'kaffedoft', 'kaffe', 'cafe', 'café'],
             nextRoom: 4
         }, {
-            text: ['inbrott', 'inbrot', 'panik', 'springa', 'springer ut', 'går ut', 'går', 'jag får panik', 'jag springer', 'jag springer ut', 'jag går', 'jag går ut'],
+            text: ['springer ut', 'springer ut igen', 'panik', 'springa', 'springer', 'går ut', 'går', 'jag får panik', 'jag springer', 'jag springer ut', 'jag går', 'jag går ut','ut'],
             nextRoom: 5
         }]
     },
 
     //scenario SJÖ [3]
     {
-        message: 'Du står nu vid sjön, några meter bort finns en motorbåt. Vad vill du göra? \n\n Val: \nGå till motorbåten \n går tillbaka till huset',
+        message: 'Du står nu vid sjön, några meter bort finns en motorbåt. Vad vill du göra? \n\n Val: \nGå till motorbåten \n Går tillbaka till huset',
         options: [{
             text: ['gå till motorbåten', 'motorbåten', 'båten', 'båt', 'kolla båten', 'jag går till motorbåten'],
             nextRoom: 6
@@ -67,7 +66,7 @@ const gameStory = [
 
     //scenario HUS => INNBROTT [5]
     {
-        message: 'Du står nu utanför huset. Dörren stängs bakomdig med ett högt BANG! Vad gör du?\n\n Val: Spring!!! eller står helt stilla och hoppas ingen hörde!',
+        message: 'Du står nu utanför huset. Dörren stängs bakomdig med ett högt BANG! Vad gör du?\n\n Val: \nSpring!!! \nStår helt stilla och hoppas ingen hörde!',
         options: [{
             text: ['Springer!!!', 'Springer!!', 'springer!', 'springer', 'spring'],
             nextRoom: 8
@@ -79,19 +78,19 @@ const gameStory = [
 
     //scenario SJÖ => MOTORBÅT [6]
     {
-        message: 'Du kan tyvärr inte starta båten, gå i land. Du snubblar och hamnar i vattnet, det blir ett högt ljud, vad gör du?\n\n Val: Tar dig upp ur vattnet och springer mot huset eller försöker komma på båten igen',
+        message: 'Du kan tyvärr inte starta båten, gå i land. Du snubblar och hamnar i vattnet, det blir ett högt ljud, vad gör du?\n\n Val:\nTar dig upp ur vattnet och springer mot huset \n Försöker komma på båten igen',
         options: [{
             text: ['Tar dig upp ur vattnet och springer mot huset', 'tar dig upp', 'tar dig upp ur vattnet', 'springer', 'springer mot huset', 'går tillbaka till huset', 'huset'],
             nextRoom: 8
         }, {
-            text: ['Försöker komma på båten igen', 'går på båten', 'båten igen', 'går upp', 'testa båten', 'upp'],
+            text: ['Försöker komma på båten igen', 'går på båten', 'båten igen', 'går upp', 'testa båten', 'upp', 'båten'],
             nextRoom: 8
         }]
     },
 
     //scenario SJÖ => VÄND TILL HUSET [7]
     {
-        message: 'Du vänder och börjar gå mot huset och kommer på att det fanns en bil utanför. Du går till bilen, den är öppen och nycklarna ligger i vad gör du? \n\n Val: Sätter dig i bilen och kör iväg på stigen eller Du går mot huset för att se om du får låna bilen',
+        message: 'Du vänder och börjar gå mot huset och kommer på att det fanns en bil utanför. Du går till bilen, den är öppen och nycklarna ligger i vad gör du? \n\n Val: \nSätter dig i bilen och kör iväg\n Du går mot huset för att se om du får låna bilen',
         options: [{
             text: ['Sätter dig i bilen och kör iväg på stigen', 'sätter dig i bilen','tar bilen', 'tar bilen och kör iväg', 'sätter dig i bilen och kör iväg', 'kör iväg i bilen', 'bilen', 'kör', 'ta bilen', 'drive'],
             nextRoom: 9
@@ -104,7 +103,7 @@ const gameStory = [
 
     //scenario LOOSER END SCEN [8]
     {
-        message: 'Du hör ett obehagligt ljud bakom dig, ljudet kommer närmare och närmare en stark illaluktande doft omringar dig och det blir svart. Game over, du har blivit uppäten av en zombie 🧟‍🧟‍ \n\nVill du spela igen?',
+        message: 'GAME OVER \nDu hör ett obehagligt ljud bakom dig, ljudet kommer närmare och närmare en stark illaluktande doft omringar dig och det blir svart. Game over, du har blivit uppäten av en zombie 🧟‍🧟‍ \n\nVill du spela igen?',
         options: [{
             text: ['ja', 'yes', 'si', 'jaa', 'ok', 'okey', 'yeah'],
             nextRoom: 0
@@ -116,7 +115,7 @@ const gameStory = [
 
     //scenario WINNER END SCEN [9]
     {
-        message: 'Påvägen ser du massa zombies och blir rädd och överraskad men mest lättad. \n Grattis du har lyckats ta dig ut levande från zombie skogen 🏆\n\nBra jobbat, vill du spela igen?',
+        message: 'THE WINNER TAKES IT ALL 😎Påvägen ser du massa zombies och blir rädd och överraskad men mest lättad. \n Grattis du har lyckats ta dig ut levande från zombie skogen 🏆\n\nBra jobbat, vill du spela igen?',
         options: [{
             text: ['ja', 'yes', 'si', 'jaa', 'ok', 'okey', 'yeah'],
             nextRoom: 0
