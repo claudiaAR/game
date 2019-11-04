@@ -24,22 +24,10 @@ function bindKeyEvent() {
 /**
  * 
  * @param {KeyboardEvent} event 
- * funktionen tar in ett event som först tar bort en css-klass 
- * den första if-satsen kollar om det inkommande eventet är av värdet enter
- * loopar igenom de två värdena i options arrayen och jämför dess textvärden 
- * med textvärden från inputfältet
- * 
- * om inputfältets text matchar så uppdtteras currentRoomIndex variablen med 
- * värdet i option.nextRoom,
- * kör game funtionen och uppdaterar placeholder attributet på inputfältet
- * 
- * om keypress-eventet inte matchar nångon text i någon av options-arrayerna
- * så uppdateras placeholder attributet på inputfältet med ett felmeddelande
- * oc en css-klass sätts på input-elementet
- * 
  * 
  * Om texten från inputfältet matchar en text i textarrayen så uppdateras 
  * currentRoomIndex och spelaren skickas framåt annars visas ett felmeddelnade
+ * den första if-satsen kollar om det inkommande eventet är av värdet enter
  */
 function handleEnter(event) {
     inputElement.classList.remove('answer_error')
