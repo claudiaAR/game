@@ -20,9 +20,6 @@ body {
 }
 
 .woods_video {
-    /* position: fixed;
-    right: 0;
-  bottom: 0; */
     min-width: 100%;
     min-height: 100%;
 
@@ -68,7 +65,6 @@ body {
 
     body {
         background: url("bilder/zombie_hands.jpg") no-repeat;
-        width: 100vw;
         object-fit: cover;
     }
 
